@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Why Not Me",
+        "author": "Anubhav Aggarwal"
+    },
+    {
+        "id": 2,
+        "name": "Atomic habbit",
+        "author": "James Clear"
+    },
+    {
+        "id": 3,
+        "name": "Invisible Man",
+        "author": "Ralph Ellison"
+    },
+    {
+        "id": 4,
+        "name": "Animal Farm",
+        "author": "George Orwell"
+    },
+    {
+        "id": 5,
+        "name": "Philosoper's Stone",
+        "author": "JK Rowling"
+    },
+    {
+        "id": 6,
+        "name": "Why Not Me",
+        "author": "Anubhav Aggarwal"
+    }
+]
