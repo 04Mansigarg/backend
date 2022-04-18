@@ -11,10 +11,14 @@ const logger = (req, res, next) => {
     next()
 
 }
+const response = {}
 const checkPermission = (word) => {
     return (req, res, next) => {
         if (word === "librarians" || word === "author") {
             console.log(req.url + " " + word)
+            response["route"] = req.url;
+            response["permission"] = true;
+            console.log(response)
             next()
         }
     }
@@ -25,16 +29,19 @@ const PORT = 8000
 app.get("/books", logger,
     (req, res, next) => {
         res.json(books)
+        res.send()
     })
 app.get("/libraries", [logger, checkPermission("librarians")], (req, res, next) => {
     if (req.url) {
-        res.json(library)
+        res.send(response)
     }
 
 })
 app.get("/author", [logger, checkPermission("author")], (req, res, next) => {
     if (req.url) {
-        res.json(author)
+        res.send(response)
+
+
     }
 
 })
