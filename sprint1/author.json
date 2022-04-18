@@ -1,0 +1,6 @@
+[
+    {
+        "route":"/author",
+        "permission":true
+    }
+ ]
