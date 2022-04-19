@@ -1,6 +1,5 @@
 const express = require("express")
 const app = express()
-const path = require("path")
 const books = require("./books.json")
 const library = require("./libraries.json")
 const author = require("./author.json")

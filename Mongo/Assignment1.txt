@@ -1,0 +1,449 @@
+db.Assignment.insert({"first_name" : "Manya", "last_name" : "Garg", "email" : "garg123@gmail.com", "gender" : "Female", "age" : 21, "ip_address" : "1:2:4"}) irst_name" : "Mansi", "last_name" : "Garg", "email" : "garg@gmail.com", "gender" : "Female", "age" : 20, "i
+WriteResult({ "nInserted" : 1 })
+> db.Assignment.find({})
+{ "_id" : ObjectId("625f15988a994cfa904b788b"), "first_name" : "Mansi", "last_name" : "Garg", "email" : "garg@gmail.com", "gender" : "Female", "age" : 20, "ip_address" : "1:2:3" }
+{ "_id" : ObjectId("625f193184e8a3dc6c1fd500"), "first_name" : "Manya", "last_name" : "Garg", "email" : "garg123@gmail.com", "gender" : "Female", "age" : 21, "ip_address" : "1:2:4" }
+> db.Assignment.find({}).pretty()
+{
+        "_id" : ObjectId("625f15988a994cfa904b788b"),
+        "first_name" : "Mansi",
+        "last_name" : "Garg",
+        "email" : "garg@gmail.com",
+        "gender" : "Female",
+        "age" : 20,
+        "ip_address" : "1:2:3"
+}
+{
+        "_id" : ObjectId("625f193184e8a3dc6c1fd500"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+  db.Assignment.insertMany([{"first_name" : "Manya", "last_name" : "Garg", "email" : "garg123@gmail.com", "gender" : "Female", "age" : 21, "ip_address" : "1:2:4"},{"first_name" : "Manya", "last_name" : "Garg", "email" : "garg123@gmail.com", "gender" : "Female", "age" : 21, "ip_address" : "1:2:4"},{"first_name" : "Simmi", "last_name" : "Singh", "email" : "simmi123@gmail.com", "gender" : "Female", "age" : 23, "ip_address" : "7:2:4"} ]) _name" : "Manya", "last_name" : "Garg", "email" : "garg123@gmail.com", "gender" : "Female", ])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("625f1aba84e8a3dc6c1fd501"),
+                ObjectId("625f1aba84e8a3dc6c1fd502"),
+                ObjectId("625f1aba84e8a3dc6c1fd503")
+        ]
+}
+> db.Assignment.find({})
+{ "_id" : ObjectId("625f15988a994cfa904b788b"), "first_name" : "Mansi", "last_name" : "Garg", "email" : "garg@gmail.com", "gender" : "Female", "age" : 20, "ip_address" : "1:2:3" }
+{ "_id" : ObjectId("625f193184e8a3dc6c1fd500"), "first_name" : "Manya", "last_name" : "Garg", "email" : "garg123@gmail.com", "gender" : "Female", "age" : 21, "ip_address" : "1:2:4" }
+{ "_id" : ObjectId("625f1aba84e8a3dc6c1fd501"), "first_name" : "Manya", "last_name" : "Garg", "email" : "garg123@gmail.com", "gender" : "Female", "age" : 21, "ip_address" : "1:2:4" }
+{ "_id" : ObjectId("625f1aba84e8a3dc6c1fd502"), "first_name" : "Manya", "last_name" : "Garg", "email" : "garg123@gmail.com", "gender" : "Female", "age" : 21, "ip_address" : "1:2:4" }
+{ "_id" : ObjectId("625f1aba84e8a3dc6c1fd503"), "first_name" : "Simmi", "last_name" : "Singh", "email" : "simmi123@gmail.com", "gender" : "Female", "age" : 23, "ip_address" : "7:2:4" }
+> db.Assignment.find({}).pretty()
+{
+        "_id" : ObjectId("625f15988a994cfa904b788b"),
+        "first_name" : "Mansi",
+        "last_name" : "Garg",
+        "email" : "garg@gmail.com",
+        "gender" : "Female",
+        "age" : 20,
+        "ip_address" : "1:2:3"
+}
+{
+        "_id" : ObjectId("625f193184e8a3dc6c1fd500"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4"
+}
+{
+        "_id" : ObjectId("625f1aba84e8a3dc6c1fd501"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4"
+}
+{
+        "_id" : ObjectId("625f1aba84e8a3dc6c1fd502"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4"
+}
+db.Assignment.insertMany([{"first_name" : "Anjali", "last_name" : "Singh", "email" : "anjali123@gmail.com", "gender" : "Female", "age" : 25, "ip_address" : "3:2:4"},{"first_name" : "Ritu", "last_name" : "raj", "email" : "ritu123@gmail.com", "gender" : "Female", "age" : 24, "ip_address" : "1:2:7"},{"first_name" : "Reetam", "last_name" : "Sisodiya", "email" : "Reetam123@gmail.com", "gender" : "Male", "age" : 26, "ip_address" : "1:9:4"},{"first_name" : "Raj", "last_name" : "Malhotra", "email" : "Raj111@gmail.com", "gender" : "Male", "age" : 23, "ip_address" : "1:1:6"},{"first_name" : "Ayush", "last_name" : "Sharma", "email" : "ayush@gmail.com", "gender" : "Male", "age" : 22, "ip_address" : "3:4:5"}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("625f1d6ee3f41284d6dafead"),
+                ObjectId("625f1d6ee3f41284d6dafeae"),
+                ObjectId("625f1d6ee3f41284d6dafeaf"),
+                ObjectId("625f1d6ee3f41284d6dafeb0"),
+                ObjectId("625f1d6ee3f41284d6dafeb1")
+        ]
+}
+> db.Assignment.find({}).pretty()
+{
+        "_id" : ObjectId("625f15988a994cfa904b788b"),
+        "first_name" : "Mansi",
+        "last_name" : "Garg",
+        "email" : "garg@gmail.com",
+        "gender" : "Female",
+        "age" : 20,
+        "ip_address" : "1:2:3"
+}
+{
+        "_id" : ObjectId("625f193184e8a3dc6c1fd500"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4"
+}
+{
+        "_id" : ObjectId("625f1aba84e8a3dc6c1fd501"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4"
+}
+{
+        "_id" : ObjectId("625f1aba84e8a3dc6c1fd502"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4"
+}
+{
+        "_id" : ObjectId("625f1aba84e8a3dc6c1fd503"),
+        "first_name" : "Simmi",
+        "last_name" : "Singh",
+        "email" : "simmi123@gmail.com",
+        "gender" : "Female",
+        "age" : 23,
+        "ip_address" : "7:2:4"
+}
+{
+        "_id" : ObjectId("625f1d6ee3f41284d6dafead"),
+        "first_name" : "Anjali",
+        "last_name" : "Singh",
+        "email" : "anjali123@gmail.com",
+        "gender" : "Female",
+        "age" : 25,
+        "ip_address" : "3:2:4"
+}
+{
+        "_id" : ObjectId("625f1d6ee3f41284d6dafeae"),
+        "first_name" : "Ritu",
+        "last_name" : "raj",
+        "email" : "ritu123@gmail.com",
+        "gender" : "Female",
+        "age" : 24,
+        "ip_address" : "1:2:7"
+}
+{
+        "_id" : ObjectId("625f1d6ee3f41284d6dafeaf"),
+        "first_name" : "Reetam",
+        "last_name" : "Sisodiya",
+        "email" : "Reetam123@gmail.com",
+        "gender" : "Male",
+        "age" : 26,
+        "ip_address" : "1:9:4"
+}
+{
+        "_id" : ObjectId("625f1d6ee3f41284d6dafeb0"),
+        "first_name" : "Raj",
+        "last_name" : "Malhotra",
+        "email" : "Raj111@gmail.com",
+        "gender" : "Male",
+        "age" : 23,
+        "ip_address" : "1:1:6"
+}
+{
+        "_id" : ObjectId("625f1d6ee3f41284d6dafeb1"),
+        "first_name" : "Ayush",
+        "last_name" : "Sharma",
+        "email" : "ayush@gmail.com",
+        "gender" : "Male",
+        "age" : 22,
+        "ip_address" : "3:4:5"
+}
+> db.Assignment.find({"first_name":"Manya"}).pretty()
+{
+        "_id" : ObjectId("625f193184e8a3dc6c1fd500"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4"
+}
+{
+        "_id" : ObjectId("625f1aba84e8a3dc6c1fd501"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4"
+}
+{
+        "_id" : ObjectId("625f1aba84e8a3dc6c1fd502"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4"
+}
+db.Assignment.findOne({"first_name":"Manya"})
+{
+        "_id" : ObjectId("625f193184e8a3dc6c1fd500"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4"
+}
+db.Assignment.update({"_id" : ObjectId("625f1d6ee3f41284d6dafeb0")},{$set:{"Hobby":"Singing"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.Assignment.update({"_id" : ObjectId("625f1d6ee3f41284d6dafeb0")},{$set:{"FavBook":"Atomic Habbit"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.Assignment.find({"_id" : ObjectId("625f1d6ee3f41284d6dafeb0")}).pretty()
+{
+        "_id" : ObjectId("625f1d6ee3f41284d6dafeb0"),
+        "first_name" : "Raj",
+        "last_name" : "Malhotra",
+        "email" : "Raj111@gmail.com",
+        "gender" : "Male",
+        "age" : 23,
+        "ip_address" : "1:1:6",
+        "Hobby" : "Singing",
+        "FavBook" : "Atomic Habbit"
+}
+> db.Assignment.update({"first_name":"Manya"},{$set:{"Hobby":"Dancing","FavBook":"Why Not Me"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+>  db.Assignment.find({"first_name":"Manya"})
+{ "_id" : ObjectId("625f193184e8a3dc6c1fd500"), "first_name" : "Manya", "last_name" : "Garg", "email" : "garg123@gmail.com", "gender" : "Female", "age" : 21, "ip_address" : "1:2:4", "FavBook" : "Why Not Me", "Hobby" : "Dancing" }
+{ "_id" : ObjectId("625f1aba84e8a3dc6c1fd501"), "first_name" : "Manya", "last_name" : "Garg", "email" : "garg123@gmail.com", "gender" : "Female", "age" : 21, "ip_address" : "1:2:4" }
+{ "_id" : ObjectId("625f1aba84e8a3dc6c1fd502"), "first_name" : "Manya", "last_name" : "Garg", "email" : "garg123@gmail.com", "gender" : "Female", "age" : 21, "ip_address" : "1:2:4" }
+ db.Assignment.find({"first_name":"Manya"}).pretty()
+{
+        "_id" : ObjectId("625f193184e8a3dc6c1fd500"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4",
+        "FavBook" : "Why Not Me",
+        "Hobby" : "Dancing"
+}
+{
+        "_id" : ObjectId("625f1aba84e8a3dc6c1fd501"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4"
+}
+{
+        "_id" : ObjectId("625f1aba84e8a3dc6c1fd502"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4"
+}
+> db.Assignment.find({"first_name":"Manya"}).pretty()
+{
+        "_id" : ObjectId("625f193184e8a3dc6c1fd500"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4",
+        "FavBook" : "Why Not Me",
+        "Hobby" : "Dancing"
+}
+{
+        "_id" : ObjectId("625f1aba84e8a3dc6c1fd501"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4"
+}
+{
+        "_id" : ObjectId("625f1aba84e8a3dc6c1fd502"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4"
+}
+>  db.Assignment.updateMany({"first_name":"Manya"},{$set:{"Hobby":"Dancing","FavBook":"Why Not Me"}})
+{ "acknowledged" : true, "matchedCount" : 3, "modifiedCount" : 2 }
+>  db.Assignment.find({"first_name":"Manya"}).pretty()
+{
+        "_id" : ObjectId("625f193184e8a3dc6c1fd500"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4",
+        "FavBook" : "Why Not Me",
+        "Hobby" : "Dancing"
+}
+{
+        "_id" : ObjectId("625f1aba84e8a3dc6c1fd501"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4",
+        "FavBook" : "Why Not Me",
+        "Hobby" : "Dancing"
+}
+{
+        "_id" : ObjectId("625f1aba84e8a3dc6c1fd502"),
+        "first_name" : "Manya",
+        "last_name" : "Garg",
+        "email" : "garg123@gmail.com",
+        "gender" : "Female",
+        "age" : 21,
+        "ip_address" : "1:2:4",
+        "FavBook" : "Why Not Me",
+        "Hobby" : "Dancing"
+}
+ db.Assignment.remove({"first_name":"Manya"})
+WriteResult({ "nRemoved" : 3 })
+ db.Assignment.find({}).pretty()
+{
+        "_id" : ObjectId("625f15988a994cfa904b788b"),
+        "first_name" : "Mansi",
+        "last_name" : "Garg",
+        "email" : "garg@gmail.com",
+        "gender" : "Female",
+        "age" : 20,
+        "ip_address" : "1:2:3"
+}
+{
+        "_id" : ObjectId("625f1aba84e8a3dc6c1fd503"),
+        "first_name" : "Simmi",
+        "last_name" : "Singh",
+        "email" : "simmi123@gmail.com",
+        "gender" : "Female",
+        "age" : 23,
+        "ip_address" : "7:2:4"
+}
+{
+        "_id" : ObjectId("625f1d6ee3f41284d6dafead"),
+        "first_name" : "Anjali",
+        "last_name" : "Singh",
+        "email" : "anjali123@gmail.com",
+        "gender" : "Female",
+        "age" : 25,
+        "ip_address" : "3:2:4"
+}
+{
+        "_id" : ObjectId("625f1d6ee3f41284d6dafeae"),
+        "first_name" : "Ritu",
+        "last_name" : "raj",
+        "email" : "ritu123@gmail.com",
+        "gender" : "Female",
+        "age" : 24,
+        "ip_address" : "1:2:7"
+}
+{
+        "_id" : ObjectId("625f1d6ee3f41284d6dafeaf"),
+        "first_name" : "Reetam",
+        "last_name" : "Sisodiya",
+        "email" : "Reetam123@gmail.com",
+        "gender" : "Male",
+        "age" : 26,
+        "ip_address" : "1:9:4"
+}
+{
+        "_id" : ObjectId("625f1d6ee3f41284d6dafeb0"),
+        "first_name" : "Raj",
+        "last_name" : "Malhotra",
+        "email" : "Raj111@gmail.com",
+        "gender" : "Male",
+        "age" : 23,
+        "ip_address" : "1:1:6",
+        "Hobby" : "Singing",
+        "FavBook" : "Atomic Habbit"
+}
+{
+        "_id" : ObjectId("625f1d6ee3f41284d6dafeb1"),
+        "first_name" : "Ayush",
+        "last_name" : "Sharma",
+        "email" : "ayush@gmail.com",
+        "gender" : "Male",
+        "age" : 22,
+        "ip_address" : "3:4:5"
+}
+ db.Assignment.remove({"first_name":"Raj"})
+WriteResult({ "nRemoved" : 1 })
+db.Assignment.deleteMany({"first_name":"Reetam"},{"last_name":"Sharma"})
+{ "acknowledged" : true, "deletedCount" : 1 }
+db.Assignment.find({}).pretty()
+{
+        "_id" : ObjectId("625f15988a994cfa904b788b"),
+        "first_name" : "Mansi",
+        "last_name" : "Garg",
+        "email" : "garg@gmail.com",
+        "gender" : "Female",
+        "age" : 20,
+        "ip_address" : "1:2:3"
+}
+{
+        "_id" : ObjectId("625f1aba84e8a3dc6c1fd503"),
+        "first_name" : "Simmi",
+        "last_name" : "Singh",
+        "email" : "simmi123@gmail.com",
+        "gender" : "Female",
+        "age" : 23,
+        "ip_address" : "7:2:4"
+}
+{
+        "_id" : ObjectId("625f1d6ee3f41284d6dafead"),
+        "first_name" : "Anjali",
+        "last_name" : "Singh",
+        "email" : "anjali123@gmail.com",
+        "gender" : "Female",
+        "age" : 25,
+        "ip_address" : "3:2:4"
+}
+{
+        "_id" : ObjectId("625f1d6ee3f41284d6dafeae"),
+        "first_name" : "Ritu",
+        "last_name" : "raj",
+        "email" : "ritu123@gmail.com",
+        "gender" : "Female",
+        "age" : 24,
+        "ip_address" : "1:2:7"
+}
+{
+        "_id" : ObjectId("625f1d6ee3f41284d6dafeb1"),
+        "first_name" : "Ayush",
+        "last_name" : "Sharma",
+        "email" : "ayush@gmail.com",
+        "gender" : "Male",
+        "age" : 22,
+        "ip_address" : "3:4:5"
+}
